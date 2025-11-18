@@ -169,9 +169,9 @@ use Faker\Container\ContainerInterface;
  *
  * @method string company()
  *
- * @property string $companyuffix
+ * @property string $companySuffix
  *
- * @method string companyuffix()
+ * @method string companySuffix()
  *
  * @property string $jobTitle
  *
@@ -565,7 +565,7 @@ class Generator
      */
     private $uniqueGenerator;
 
-    public function __construct(ContainerInterface $container = null)
+    public function __construct(?ContainerInterface $container = null)
     {
         $this->container = $container ?: Container\ContainerBuilder::withDefaultExtensions()->build();
     }

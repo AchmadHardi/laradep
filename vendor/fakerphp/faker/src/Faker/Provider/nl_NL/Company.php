@@ -38,7 +38,7 @@ class Company extends \Faker\Provider\Company
         'Zaakwaarnemer', 'Zakenman', 'Zanger', 'Zeefdrukker', 'Zeeman', 'Zeepzieder', 'Zeilmaker', 'Zelfstandig ondernemer', 'Zetter', 'Ziekenhuisapotheker', 'Ziekenhuishygiënist', 'Ziekenverzorgende', 'Zilversmid', 'Zweminstructeur', 'Zoöloog',
     ];
 
-    protected static $companyuffix = [
+    protected static $companySuffix = [
         'VOF', 'CV', 'LLP', 'BV', 'NV', 'IBC', 'CSL', 'EESV', 'SE', 'CV', 'Stichting', '& Zonen', '& Zn',
     ];
 
@@ -90,7 +90,7 @@ class Company extends \Faker\Provider\Company
         }
 
         if (Miscellaneous::boolean()) {
-            return $companyName . ' ' . static::randomElement(static::$companyuffix);
+            return $companyName . ' ' . static::randomElement(static::$companySuffix);
         }
 
         return $companyName;

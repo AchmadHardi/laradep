@@ -10,8 +10,8 @@ class Company extends \Faker\Provider\Company
      * @var array French company name formats.
      */
     protected static $formats = [
-        '{{lastName}} {{companyuffix}}',
-        '{{lastName}} {{lastName}} {{companyuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{lastName}} {{companySuffix}}',
         '{{lastName}}',
         '{{lastName}}',
     ];
@@ -51,7 +51,7 @@ class Company extends \Faker\Provider\Company
     /**
      * @var array Company suffixes.
      */
-    protected static $companyuffix = ['SA', 'S.A.', 'SARL', 'S.A.R.L.', 'SAS', 'S.A.S.', 'et Fils'];
+    protected static $companySuffix = ['SA', 'S.A.', 'SARL', 'S.A.R.L.', 'SAS', 'S.A.S.', 'et Fils'];
 
     protected static $siretNicFormats = ['####', '0###', '00#%'];
 

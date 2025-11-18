@@ -90,9 +90,8 @@
         <!-- Main Sidebar Container -->
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo -->
-          <a href="/dashboard" class="brand-link">
-                <img src="/assets/dist/img/a.png" alt="AdminLTE Logo"
-                    class="brand-image img-circle elevation-3"
+            <a href="/dashboard" class="brand-link">
+                <img src="/assets/dist/img/a.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
                     style="opacity: .8; width: 80px; height: 60px;">
                 <span class="brand-text font-weight-light">Jurnal</span>
             </a>
@@ -114,8 +113,7 @@
                 <nav class="mt-2">
                     <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
                         data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class
-               with font-awesome or any other icon font library -->
+
                         <li class="nav-item">
                             <a href="/" class="nav-link">
                                 <i class="nav-icon fa-solid fa-gauge-high"></i>
@@ -124,47 +122,28 @@
                                 </p>
                             </a>
                         </li>
-                        {{-- <li class="nav-item">
-                            <a href="/company" class="nav-link">
-                                <i class="nav-icon fa-solid fa-box"></i>
-                                <p>
-                                    Company
-                                </p>
-                            </a>
-                        </li> --}}
-                        <li class="nav-item">
-                            <a href="/jurnal" class="nav-link">
-                                <i class="nav-icon fa-solid fa-book"></i>
-                                <p>
-                                    Jurnal
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/transaksi" class="nav-link">
-                                <i class="nav-icon fa-solid fa-dollar-sign"></i>
-                                <p>
-                                    Transaksi Jurnal
-                                </p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/coa" class="nav-link">
-                                <i class="nav-icon fa-solid fa-file-invoice"></i>
 
-                                <p>
-                                    Transaksi COA
-                                </p>
+                        <li class="nav-item">
+                            <a href="/siswa" class="nav-link">
+                                <i class="nav-icon fa-solid fa-users"></i>
+                                <p>Siswa</p>
                             </a>
                         </li>
-                        {{-- <li class="nav-item">
-                            <a href="/triangle/5" class="nav-link">
-                                <i class="nav-icon fa-solid fa-shapes"></i>
-                                <p>
-                                    Triangle
-                                </p>
+                        <li class="nav-item">
+                            <a href="/lembaga" class="nav-link">
+                                <i class="nav-icon fa-solid fa-building"></i>
+                                <p>Lembaga</p>
                             </a>
-                        </li> --}}
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="/profiles" class="nav-link">
+                                <i class="nav-icon fa-solid fa-user"></i>
+                                <p>Profile</p>
+                            </a>
+                        </li>
+
+
                         <br>
 
                     </ul>

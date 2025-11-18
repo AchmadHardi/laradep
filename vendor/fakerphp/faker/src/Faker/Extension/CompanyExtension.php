@@ -15,7 +15,7 @@ interface CompanyExtension extends Extension
     /**
      * @example 'Ltd'
      */
-    public function companyuffix(): string;
+    public function companySuffix(): string;
 
     public function jobTitle(): string;
 }

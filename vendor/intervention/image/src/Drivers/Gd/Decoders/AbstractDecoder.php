@@ -14,9 +14,7 @@ abstract class AbstractDecoder extends SpecializableDecoder implements Specializ
     /**
      * Return media (mime) type of the file at given file path
      *
-     * @param string $filepath
      * @throws DecoderException
-     * @return MediaType
      */
     protected function getMediaTypeByFilePath(string $filepath): MediaType
     {
@@ -26,29 +24,19 @@ abstract class AbstractDecoder extends SpecializableDecoder implements Specializ
             throw new DecoderException('Unable to detect media (MIME) from data in file path.');
         }
 
-        if (!array_key_exists('mime', $info)) {
-            throw new DecoderException('Unable to detect media (MIME) from data in file path.');
-        }
-
         return MediaType::from($info['mime']);
     }
 
     /**
      * Return media (mime) type of the given image data
      *
-     * @param string $data
      * @throws DecoderException
-     * @return MediaType
      */
     protected function getMediaTypeByBinary(string $data): MediaType
     {
         $info = @getimagesizefromstring($data);
 
         if (!is_array($info)) {
-            throw new DecoderException('Unable to detect media (MIME) from binary data.');
-        }
-
-        if (!array_key_exists('mime', $info)) {
             throw new DecoderException('Unable to detect media (MIME) from binary data.');
         }
 

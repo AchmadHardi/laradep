@@ -7,14 +7,14 @@ require_once 'check_digit.php';
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
-        '{{lastName}} {{companyuffix}}',
+        '{{lastName}} {{companySuffix}}',
         '{{lastName}}-{{lastName}}',
         '{{lastName}} e {{lastName}}',
-        '{{lastName}} e {{lastName}} {{companyuffix}}',
+        '{{lastName}} e {{lastName}} {{companySuffix}}',
         '{{lastName}} Comercial Ltda.',
     ];
 
-    protected static $companyuffix = ['e Filhos', 'e Associados', 'Ltda.', 'S.A.'];
+    protected static $companySuffix = ['e Filhos', 'e Associados', 'Ltda.', 'S.A.'];
 
     /**
      * A random CNPJ number.

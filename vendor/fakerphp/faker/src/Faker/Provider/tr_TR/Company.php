@@ -5,16 +5,16 @@ namespace Faker\Provider\tr_TR;
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
-        '{{lastName}} {{companyuffix}}',
-        '{{lastName}}oğlu {{companyuffix}}',
-        '{{lastName}} {{lastName}} {{companyuffix}}',
-        '{{lastName}} {{companyField}} {{companyuffix}}',
-        '{{lastName}} {{companyField}} {{companyuffix}}',
-        '{{lastName}} {{companyField}} {{companyuffix}}',
-        '{{lastName}} {{lastName}} {{companyField}} {{companyuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}}oğlu {{companySuffix}}',
+        '{{lastName}} {{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companyField}} {{companySuffix}}',
+        '{{lastName}} {{companyField}} {{companySuffix}}',
+        '{{lastName}} {{companyField}} {{companySuffix}}',
+        '{{lastName}} {{lastName}} {{companyField}} {{companySuffix}}',
     ];
 
-    protected static $companyuffix = ['A.Ş.', 'Ltd. Şti.'];
+    protected static $companySuffix = ['A.Ş.', 'Ltd. Şti.'];
 
     protected static $companyField = [
         'Akaryakıt', 'Beyaz Eşya', 'Bilgi İşlem', 'Bilgisayar', 'Bilişim Hizmetleri',

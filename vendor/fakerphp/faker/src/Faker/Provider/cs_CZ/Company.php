@@ -8,10 +8,10 @@ class Company extends \Faker\Provider\Company
      * @var array Czech company name formats.
      */
     protected static $formats = [
-        '{{lastName}} {{companyuffix}}',
-        '{{lastName}} {{lastName}} {{companyuffix}}',
-        '{{lastName}}-{{lastName}} {{companyuffix}}',
-        '{{lastName}} a {{lastName}} {{companyuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{lastName}} {{companySuffix}}',
+        '{{lastName}}-{{lastName}} {{companySuffix}}',
+        '{{lastName}} a {{lastName}} {{companySuffix}}',
     ];
 
     /**
@@ -52,7 +52,7 @@ class Company extends \Faker\Provider\Company
     /**
      * @var array Company suffixes.
      */
-    protected static $companyuffix = ['s.r.o.', 's.r.o.', 's.r.o.', 's.r.o.', 'a.s.', 'o.p.s.', 'o.s.'];
+    protected static $companySuffix = ['s.r.o.', 's.r.o.', 's.r.o.', 's.r.o.', 'a.s.', 'o.p.s.', 'o.s.'];
 
     /**
      * Returns a random catch phrase noun.

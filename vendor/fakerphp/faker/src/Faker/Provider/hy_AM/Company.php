@@ -5,14 +5,14 @@ namespace Faker\Provider\hy_AM;
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
-        '{{lastName}} {{companyuffix}}',
-        '{{lastName}} {{companyuffix}}',
-        '{{lastName}} {{companyuffix}}',
-        '{{lastName}} {{companyuffix}}',
-        '{{lastName}} {{companyuffix}}',
-        '{{lastName}} {{companyuffix}}',
-        '{{lastName}} {{companyuffix}}',
-        '{{lastName}} {{companyuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companySuffix}}',
         '{{lastName}} եղբայրներ',
     ];
 
@@ -24,7 +24,7 @@ class Company extends \Faker\Provider\Company
 
     ];
 
-    protected static $companyuffix = ['ՍՊԸ', 'և որդիներ', 'ՓԲԸ', 'ԲԲԸ'];
+    protected static $companySuffix = ['ՍՊԸ', 'և որդիներ', 'ՓԲԸ', 'ԲԲԸ'];
 
     /**
      * @example 'Robust full-range hub'

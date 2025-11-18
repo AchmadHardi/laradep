@@ -5,12 +5,12 @@ namespace Faker\Provider\hr_HR;
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
-        '{{lastName}} {{companyuffix}}',
+        '{{lastName}} {{companySuffix}}',
         '{{companyPrefix}} {{lastName}}',
         '{{companyPrefix}} {{firstName}}',
     ];
 
-    protected static $companyuffix = [
+    protected static $companySuffix = [
         'd.o.o.', 'j.d.o.o.', 'Security',
     ];
 

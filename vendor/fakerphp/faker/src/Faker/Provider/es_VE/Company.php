@@ -5,11 +5,11 @@ namespace Faker\Provider\es_VE;
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
-        '{{companyPrefix}} {{lastName}} {{companyuffix}}',
+        '{{companyPrefix}} {{lastName}} {{companySuffix}}',
         '{{companyPrefix}} {{lastName}}',
         '{{companyPrefix}} {{lastName}} y {{lastName}}',
-        '{{lastName}} y {{lastName}} {{companyuffix}}',
-        '{{lastName}} de {{lastName}} {{companyuffix}}',
+        '{{lastName}} y {{lastName}} {{companySuffix}}',
+        '{{lastName}} de {{lastName}} {{companySuffix}}',
         '{{lastName}} y {{lastName}}',
         '{{lastName}} de {{lastName}}',
     ];
@@ -18,7 +18,7 @@ class Company extends \Faker\Provider\Company
         'Asociación', 'Centro', 'Corporación', 'Cooperativa', 'Empresa', 'Gestora', 'Global', 'Grupo', 'Viajes',
         'Inversiones', 'Lic.', 'Dr.',
     ];
-    protected static $companyuffix = ['S.R.L.', 'C.A.', 'S.A.', 'R.L.', 'etc'];
+    protected static $companySuffix = ['S.R.L.', 'C.A.', 'S.A.', 'R.L.', 'etc'];
 
     /**
      * @example 'Grupo'

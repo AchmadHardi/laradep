@@ -16,8 +16,8 @@ class Company extends \Faker\Provider\Company
 
     protected static $formats = [
         '{{companyPrefix}}{{companyModifier}}',
-        '{{companyPrefix}}{{companyuffix}}',
-        '{{companyPrefix}}{{companyModifier}}{{companyuffix}}',
+        '{{companyPrefix}}{{companySuffix}}',
+        '{{companyPrefix}}{{companyModifier}}{{CompanySuffix}}',
     ];
 
     /**
@@ -43,7 +43,7 @@ class Company extends \Faker\Provider\Company
         '證券', '集團', '企業', '機械', '工業', '文化', '汽車',
         '百貨', '酒店', '數位',
     ];
-    protected static $companyuffix = [
+    protected static $companySuffix = [
         '公司', '有限公司', '股份有限公司',
     ];
     /**

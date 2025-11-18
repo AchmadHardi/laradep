@@ -6,9 +6,9 @@ class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
         '{{firstName}} {{lastName}} s.p.',
-        '{{lastName}} {{companyuffix}}',
-        '{{lastName}}, {{lastName}} in {{lastName}} {{companyuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}}, {{lastName}} in {{lastName}} {{companySuffix}}',
     ];
 
-    protected static $companyuffix = ['d.o.o.', 'd.d.', 'k.d.', 'k.d.d.', 'd.n.o.', 'so.p.'];
+    protected static $companySuffix = ['d.o.o.', 'd.d.', 'k.d.', 'k.d.d.', 'd.n.o.', 'so.p.'];
 }

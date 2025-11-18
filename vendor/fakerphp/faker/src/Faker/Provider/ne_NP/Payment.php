@@ -71,13 +71,13 @@ class Payment extends \Faker\Provider\Payment
     ];
 
     /**
-     * List of finance company sorted in alphabetical order.
+     * List of finance companies sorted in alphabetical order.
      *
      * @see https://en.wikipedia.org/wiki/List_of_banks_in_Nepal
      *
      * @var string[]
      */
-    protected static $financecompany = [
+    protected static $financeCompanies = [
         'Best Finance Company',
         'Capital Merchant Banking & Finance',
         'Central Finance',
@@ -98,7 +98,7 @@ class Payment extends \Faker\Provider\Payment
     ];
 
     /**
-     * List of microfinance company sorted in alphabetical order.
+     * List of microfinance companies sorted in alphabetical order.
      *
      * @see https://en.wikipedia.org/wiki/List_of_banks_in_Nepal
      *
@@ -275,7 +275,7 @@ class Payment extends \Faker\Provider\Payment
      */
     public function financeCompany(): string
     {
-        return static::randomElement(static::$financecompany);
+        return static::randomElement(static::$financeCompanies);
     }
 
     /**

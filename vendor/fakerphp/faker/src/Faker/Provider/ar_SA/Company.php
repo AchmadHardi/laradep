@@ -7,8 +7,8 @@ use Faker\Calculator\Luhn;
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
-        '{{lastName}} {{companyuffix}}',
-        '{{companyPrefix}} {{lastName}} {{companyuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{companyPrefix}} {{lastName}} {{companySuffix}}',
         '{{companyPrefix}} {{lastName}}',
     ];
 
@@ -26,7 +26,7 @@ class Company extends \Faker\Provider\Company
 
     protected static $companyPrefix = ['شركة', 'مؤسسة', 'مجموعة', 'مكتب', 'أكاديمية', 'معرض'];
 
-    protected static $companyuffix = ['وأولاده', 'للمساهمة المحدودة', ' ذ.م.م', 'مساهمة عامة', 'وشركائه'];
+    protected static $companySuffix = ['وأولاده', 'للمساهمة المحدودة', ' ذ.م.م', 'مساهمة عامة', 'وشركائه'];
 
     /**
      * @example 'مؤسسة'

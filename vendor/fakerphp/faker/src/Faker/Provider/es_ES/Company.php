@@ -5,13 +5,13 @@ namespace Faker\Provider\es_ES;
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
-        '{{companyPrefix}} {{lastName}} {{companyuffix}}',
+        '{{companyPrefix}} {{lastName}} {{companySuffix}}',
         '{{companyPrefix}} {{lastName}}',
         '{{companyPrefix}} {{lastName}}-{{lastName}}',
-        '{{lastName}}-{{lastName}} {{companyuffix}}',
-        '{{lastName}} y {{lastName}} {{companyuffix}}',
-        '{{lastName}} de {{lastName}} {{companyuffix}}',
-        '{{lastName}}, {{lastName}} y {{lastName}} {{companyuffix}}',
+        '{{lastName}}-{{lastName}} {{companySuffix}}',
+        '{{lastName}} y {{lastName}} {{companySuffix}}',
+        '{{lastName}} de {{lastName}} {{companySuffix}}',
+        '{{lastName}}, {{lastName}} y {{lastName}} {{companySuffix}}',
         '{{lastName}}-{{lastName}}',
         '{{lastName}} y {{lastName}}',
         '{{lastName}} de {{lastName}}',
@@ -42,7 +42,7 @@ class Company extends \Faker\Provider\Company
     ];
 
     protected static $companyPrefix = ['Asociación', 'Centro', 'Corporación', 'Empresa', 'Gestora', 'Global', 'Grupo', 'Viajes', 'Air'];
-    protected static $companyuffix = ['e Hijo', 'e Hija', 'e Hijos', 'y Asoc.', 'y Flia.', 'SRL', 'SA', 'S. de H.'];
+    protected static $companySuffix = ['e Hijo', 'e Hija', 'e Hijos', 'y Asoc.', 'y Flia.', 'SRL', 'SA', 'S. de H.'];
 
     /**
      * @example 'Grupo'

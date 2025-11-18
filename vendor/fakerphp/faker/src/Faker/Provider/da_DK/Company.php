@@ -8,20 +8,20 @@ class Company extends \Faker\Provider\Company
      * @var array Danish company name formats.
      */
     protected static $formats = [
-        '{{lastName}} {{companyuffix}}',
-        '{{lastName}} {{companyuffix}}',
-        '{{lastName}} {{companyuffix}}',
-        '{{firstname}} {{lastName}} {{companyuffix}}',
-        '{{middleName}} {{companyuffix}}',
-        '{{middleName}} {{companyuffix}}',
-        '{{middleName}} {{companyuffix}}',
-        '{{firstname}} {{middleName}} {{companyuffix}}',
-        '{{lastName}} & {{lastName}} {{companyuffix}}',
-        '{{lastName}} og {{lastName}} {{companyuffix}}',
-        '{{lastName}} & {{lastName}} {{companyuffix}}',
-        '{{lastName}} og {{lastName}} {{companyuffix}}',
-        '{{middleName}} & {{middleName}} {{companyuffix}}',
-        '{{middleName}} og {{middleName}} {{companyuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{lastName}} {{companySuffix}}',
+        '{{firstname}} {{lastName}} {{companySuffix}}',
+        '{{middleName}} {{companySuffix}}',
+        '{{middleName}} {{companySuffix}}',
+        '{{middleName}} {{companySuffix}}',
+        '{{firstname}} {{middleName}} {{companySuffix}}',
+        '{{lastName}} & {{lastName}} {{companySuffix}}',
+        '{{lastName}} og {{lastName}} {{companySuffix}}',
+        '{{lastName}} & {{lastName}} {{companySuffix}}',
+        '{{lastName}} og {{lastName}} {{companySuffix}}',
+        '{{middleName}} & {{middleName}} {{companySuffix}}',
+        '{{middleName}} og {{middleName}} {{companySuffix}}',
         '{{middleName}} & {{lastName}}',
         '{{middleName}} og {{lastName}}',
     ];
@@ -29,7 +29,7 @@ class Company extends \Faker\Provider\Company
     /**
      * @var array Company suffixes.
      */
-    protected static $companyuffix = ['ApS', 'A/S', 'I/S', 'K/S'];
+    protected static $companySuffix = ['ApS', 'A/S', 'I/S', 'K/S'];
 
     /**
      * @see http://cvr.dk/Site/Forms/CMS/DisplayPage.aspx?pageid=60

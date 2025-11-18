@@ -1,15 +1,12 @@
 <?php
 
-use App\Http\Controllers\AuthController;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\BarangController;
-use App\Http\Controllers\CoaController;
-use App\Http\Controllers\CompanyController;
-use App\Http\Controllers\JabatanController;
-use App\Http\Controllers\JurnalController;
-use App\Http\Controllers\TransaksiController;
-use App\Http\Controllers\TriangleController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
+use App\Http\Controllers\SiswaController;
+
+use App\Http\Controllers\DashboardController;
+use App\Http\Controllers\LembagaController;
+use App\Http\Controllers\ProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,11 +29,7 @@ Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth');
 Route::get('/dashboard', [DashboardController::class, 'index'])->name('dashboard.index');
 Route::get('/', [DashboardController::class, 'index'])->middleware('auth');
 
-//route barang
-Route::resource('/barang', BarangController::class)->middleware('auth');
-Route::post('/jabatans', [JabatanController::class, 'store']);
-Route::resource('/company', CompanyController::class)->middleware('auth');
-Route::resource('/jurnal', JurnalController::class)->middleware('auth');
-Route::resource('/transaksi', TransaksiController::class)->middleware('auth');
-Route::resource('/coa', CoaController::class)->middleware('auth');
-Route::get('/triangle/{x}', [TriangleController::class, 'show']);
+Route::get('/siswa/export', [SiswaController::class, 'export']);
+Route::resource('/siswa', SiswaController::class)->middleware('auth');
+Route::resource('/lembaga', LembagaController::class);
+Route::resource('profiles', ProfileController::class);

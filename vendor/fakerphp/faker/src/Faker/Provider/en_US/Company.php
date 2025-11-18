@@ -5,7 +5,7 @@ namespace Faker\Provider\en_US;
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
-        '{{lastName}} {{companyuffix}}',
+        '{{lastName}} {{companySuffix}}',
         '{{lastName}}-{{lastName}}',
         '{{lastName}}, {{lastName}} and {{lastName}}',
     ];
@@ -63,7 +63,7 @@ class Company extends \Faker\Provider\Company
         'Zoologists OR Wildlife Biologist',
     ];
 
-    protected static $companyuffix = ['Inc', 'and Sons', 'LLC', 'Group', 'PLC', 'Ltd'];
+    protected static $companySuffix = ['Inc', 'and Sons', 'LLC', 'Group', 'PLC', 'Ltd'];
 
     /**
      * @see https://www.irs.gov/businesses/small-businesses-self-employed/how-eins-are-assigned-and-valid-ein-prefixes

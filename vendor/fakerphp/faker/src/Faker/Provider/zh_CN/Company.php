@@ -5,7 +5,7 @@ namespace Faker\Provider\zh_CN;
 class Company extends \Faker\Provider\Company
 {
     protected static $formats = [
-        '{{companyPrefix}}{{companyuffix}}',
+        '{{companyPrefix}}{{companySuffix}}',
     ];
 
     protected static $companyPrefix = [
@@ -28,7 +28,7 @@ class Company extends \Faker\Provider\Company
         '维涛', '通际名联',
     ];
 
-    protected static $companyuffix = ['科技', '网络', '信息', '传媒'];
+    protected static $companySuffix = ['科技', '网络', '信息', '传媒'];
 
     /**
      * @see blog.renren.com/share/223844062/2387611567
@@ -223,9 +223,9 @@ class Company extends \Faker\Provider\Company
         return static::randomElement(static::$companyPrefix);
     }
 
-    public static function companyuffix()
+    public static function companySuffix()
     {
-        return parent::companyuffix() . '有限公司';
+        return parent::companySuffix() . '有限公司';
     }
 
     public function catchPhrase()

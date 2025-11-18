@@ -5,10 +5,10 @@ namespace Faker\Provider;
 class Company extends Base
 {
     protected static $formats = [
-        '{{lastName}} {{companyuffix}}',
+        '{{lastName}} {{companySuffix}}',
     ];
 
-    protected static $companyuffix = ['Ltd'];
+    protected static $companySuffix = ['Ltd'];
 
     protected static $jobTitleFormat = [
         '{{word}}',
@@ -31,9 +31,9 @@ class Company extends Base
      *
      * @return string
      */
-    public static function companyuffix()
+    public static function companySuffix()
     {
-        return static::randomElement(static::$companyuffix);
+        return static::randomElement(static::$companySuffix);
     }
 
     /**

@@ -23,7 +23,7 @@ return static function (Config\RectorConfig $rectorConfig): void {
         'colorName',
         'company',
         'companyEmail',
-        'companyuffix',
+        'companySuffix',
         'country',
         'countryCode',
         'countryISOAlpha3',
